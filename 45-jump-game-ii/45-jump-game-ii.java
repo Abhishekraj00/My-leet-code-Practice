@@ -7,9 +7,9 @@ class Solution {
       
       for(int i=0;i<nums.length-1;i++){
         
-        // des = (des<(nums[i]+i))?(nums[i]+i):des;
+        des = (des<(nums[i]+i))?(nums[i]+i):des;
         
-        des = Math.max(des,nums[i]+i);
+        // des = Math.max(des,nums[i]+i);
         
         if(pos == i){
           pos = des;
