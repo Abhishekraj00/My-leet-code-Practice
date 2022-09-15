@@ -5,9 +5,9 @@ class Solution {
       int pos = 0 ;
       int des = 0 ; 
       
-      if(nums.length >= 2 && nums[0] ==0 ){
-        return false;
-      }
+      // if(nums.length >= 2 && nums[0] ==0 ){
+      //   return false;
+      // }
       
       if(nums.length==1){
         return true;
