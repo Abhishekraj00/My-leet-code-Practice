@@ -1,18 +1,11 @@
 class Solution {
     static int max = Integer.MIN_VALUE;
-    public int longestCommonSubsequence(String text1, String text2) {
+    public int longestCommonSubsequence(String str1, String str2) {
       
-      int n1 = text1.length();
-      int n2 = text2.length();
+      int n1 = str1.length();
+      int n2 = str2.length();
       
-      return lcs(text1,text2,n1,n2);
-        
-    }
-    public int lcs(String str1, String str2,int n1,int n2) {
-      
-      // i =n1 j =n2
-      
-      int dp[][] = new int[n1+1][n2+1];
+     int dp[][] = new int[n1+1][n2+1];
       
         
       dp[0][0] = 0;
@@ -32,4 +25,6 @@ class Solution {
       return dp[n1][n2];
       
     }
+      
+      
 }
