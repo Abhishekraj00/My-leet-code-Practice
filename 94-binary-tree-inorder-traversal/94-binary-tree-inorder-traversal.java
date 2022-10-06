@@ -15,7 +15,7 @@
  */
 class Solution {
   
-    List<Integer> l = new LinkedList<>();
+    List<Integer> l = new ArrayList<>();
   
     public List<Integer> inorderTraversal(TreeNode root) {
       
