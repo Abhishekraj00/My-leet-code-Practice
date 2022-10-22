@@ -2,9 +2,10 @@ class Solution {
     public boolean checkIfPangram(String str) {
       
       HashSet<Character> hs  = new HashSet<>();
-      
+       // wrapper 
       for(int i=0;i<str.length();i++){
-        if(str.charAt(i) >= 'a' && str.charAt(i) <= 'z'){
+        char c = str.charAt(i);
+        if( c >= 'a' && c <= 'z'){
           hs.add(str.charAt(i));
         }
       }
